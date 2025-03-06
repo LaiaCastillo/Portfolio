@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4enb5k2tkrqe"]
+
+[ext_resource type="Script" path="res://Scritps/Enemigos/enemigo_1.gd" id="1_1efpv"]
+[ext_resource type="SpriteFrames" uid="uid://cgtxs8i3j7coo" path="res://Personajes/sprite_animado_pj.tres" id="1_uhqqa"]
+
+[node name="Enemigo_1" type="CharacterBody2D"]
+script = ExtResource("1_1efpv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_uhqqa")
+animation = &"qui.abajo"

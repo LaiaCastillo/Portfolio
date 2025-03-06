@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ky4df5x8b5ax"]
+
+[ext_resource type="Script" path="res://Personajes/player1.gd" id="1_q4v2i"]
+[ext_resource type="SpriteFrames" uid="uid://cgtxs8i3j7coo" path="res://Personajes/sprite_animado_pj.tres" id="2_osfix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8a0pq"]
+size = Vector2(40, 17.5)
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_q4v2i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+process_mode = 1
+process_thread_group = 1
+process_thread_group_order = 0
+process_thread_messages = 0
+texture_filter = 1
+sprite_frames = ExtResource("2_osfix")
+animation = &"qui.abajo"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 25)
+shape = SubResource("RectangleShape2D_8a0pq")
