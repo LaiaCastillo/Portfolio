@@ -1,5 +1,5 @@
 # Project with an Api of videoGames
-In this project, I have created an API that manages video games and a client that connects to it to create a user-friendly web page.
+In this project, I have created an API that manages video games and a client (Razor pages) that connects to it to create a user-friendly web page.
 I Implemented user authentication with tokens, and permission with roles.
 
 ## Added Features:
@@ -31,6 +31,7 @@ I Implemented user authentication with tokens, and permission with roles.
 - No default games are added.
 
 ## Libraries Used:
+- .Net
 
 - User Identity
 
@@ -43,3 +44,5 @@ I Implemented user authentication with tokens, and permission with roles.
 - SignalR
 
 - Asynchronous functions
+  
+- Razor pages
